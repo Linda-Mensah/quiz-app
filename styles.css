@@ -16,6 +16,20 @@ body {
   height: 100vh;
 }
 
+.title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin: 6px auto 0;
+  border-radius: 2px;
+  background: #6c8cff;
+}
+
+body.light .title::after {
+  background: #4b6cb7;
+}
+
 /* Quiz Container */
 .quiz-box {
   background: #1f1f35;
